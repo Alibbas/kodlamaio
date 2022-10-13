@@ -8,7 +8,7 @@ import kodlamaIO.logging.Logger;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		Course course = new Course("Engin", "Software Ýntro", "Data Structed", 700, "data.jpg");
+		Course course = new Course("Engin", "Software Intro", "Data Structed", 700, "data.jpg");
 		Logger[] log = { new DatabaseLogger(), new FileLogger() };
 		CourseManager courseManager = new CourseManager(new JdbcProductDao(), log);
 		courseManager.add(course);
